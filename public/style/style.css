@@ -131,3 +131,24 @@ h2 {
     width: 360px;
     height: 285px;
 }
+
+.SectionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    border: none;
+    border-top: 2px solid #85DE76;
+    width: 300px;
+    
+}
+.serviceAndAdvice {
+    margin-top: 40px;
+}
+.title {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
