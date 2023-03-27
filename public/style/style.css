@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body{
+    width: 100vw;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    place-content: space-between;
+    margin-top: 15px;
+}
+
+.logoImageNavBar {
+    height: 50px;
+    padding-left: 10px;
+}
+.logoAndName {
+    display: flex;
+    align-items: center;
+}
+.nameNavBar {
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 10px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    line-height: 100%; 
+}
+
+.navBarLink {
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    line-height: 100%;
+    padding-left:15px;
+    color: #636951;
+}
+
+.navBarLinks {
+    display: flex;
+    align-items: center;
+}
+
+.navButton {
+    margin-left: 15px;
+    margin-right: 30px;
+    border-radius: 10px;
+    height: 46px;
+    width: 135px;
+    font-size: 20;
+    border: 0;
+    color: white;
+    background-color: #636951;
+    font-family: 'Bebas Neue', cursive;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+
+.HomePage {
+    width: 100%;
+    background-size: cover;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/images/picturetest.jpg')
+   
+}
+
+h1 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+
+}
+
+.Buttons {
+    margin-top: 30px;
+}
+
+.ButtonsHPContact{
+    width: 200;
+    border-radius: 20px;
+    height: 80;
+    border:0;
+    background-color: white;
+    color: #636951;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    margin-right: 10px;
+    
+
+}
+
+
+.ButtonHPAbout{
+    width: 200;
+    border-radius: 20px;
+    height: 80;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    background-color: transparent;
+    border: solid 3px white;
+    margin-left: 10px;
+}
+
+.imageCarrousel {
+    width: 360px;
+    height: 285px;
+}

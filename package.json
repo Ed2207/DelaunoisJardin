@@ -1,0 +1,14 @@
+{
+  "name": "delaunois_et_jardin",
+  "version": "1.0.0",
+  "description": "One Page site ",
+  "main": "app.mjs",
+  "scripts": {
+    "test": "run dev"
+  },
+  "author": "EdouardP",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
