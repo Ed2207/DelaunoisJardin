@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    
 </head>
 <body>
     <nav>
@@ -44,11 +47,11 @@
             <hr class="line">
         </div>
         <div class="serviceTxt">
-            <p class="text">
+            <q class="text">
                 Je suis un professionnel de <h2 class="textlike">l'élagage, de l'abattage et de l'entretien de jardin basé dans le Brabant wallon</h2>. Avec plusieurs années d'expérience dans le domaine, je suis spécialisé dans la taille, la suppression et la gestion des arbres et arbustes pour les jardins. Je m'assure que les arbres sont en bonne santé et qu'ils sont coupés de manière à ne pas nuire à leur croissance future. Je suis également compétent pour effectuer tous types de travaux <h2 class="textlike">d'élagage et d'abattage en toute sécurité et dans le respect de l'environnement.</h2>
             </br>
             Je suis également à votre disposition pour <h2 class="textlike">entretenir votre jardin</h2>, que ce soit en taillant vos haies et vos arbustes, en prenant soin de vos plates-bandes et de vos massifs floraux. Quel que soit votre projet, je suis à l'écoute de vos besoins et de vos attentes afin de fournir un travail de qualité. Je me déplace dans tout <h2 class="textlike">le Brabant wallon et sa périférie</h2> et je suis disponible pour répondre à <a class="textlikeA">demande de devis.</a> N'hésitez pas à me contacter pour toutes questions ou pour prendre rendez-vous.
-            </p>
+        </q>
         </div>
        
         <div class="BEAFcarrousel">
@@ -99,31 +102,96 @@
             <div class="formulaire">
                 <div class="contact">
                     <div class="phoneMail">
-                        <button>Telphone</button>
-                        <p class="contactInfo">numero de tel</p>
+                        <button class="contactButton"><img class="contactIcon" src="./images/telephone.png" alt="call number"></button>
+                        <a class="contactInfo">049X/XX.XX.XX</a>
                     </div>
                     <div class="phoneMail">
-                        <button>Mail</button>
-                        <p class="contactInfo">adresse email</p>
+                        <button class="contactButton"><img class="contactIcon" src="./images/mail.png" alt="send email"></button>
+                        <a class="contactInfo">info@gmail.com</a>
                     </div>
                 </div>
                 <div class="demandeDevis">
                     <h2 class="titreDevis">Demande de Devis</h2>
                     <form action="">
-                        <input class="inputR" type="text" placeholder="Nom">
-                        <input class="inputR" type="text" placeholder="Prénom">
-                        <input class="inputR" type="email" placeholder="email">
-                        <input class="inputR" type="number" placeholder="Téléphone">
-                        <input class="inputM" type="text" placeholder="Message">
-                        <input type="submit" value="Envoyer">
+                        <div class="formInput">
+                            <div class="formColumn">
+                                <input class="inputForm" type="text" name="name" placeholder="Votre Nom">
+                                <input class="inputForm" type="text" name="prenon" placeholder="Votre Prénom">
+                                <input  class="inputForm"type="email" name="email" placeholder="Votre Adresse Email">
+                                <input class="inputForm" type="tel" name="telephone" placeholder="Votre Numero de Téléphone">
+                            </div>
+                            <div>
+                                <textarea class="inputMessage" type="text" name="message" placeholder="Votre Message"></textarea>
+                            </div>
+                        </div>
+                        <button class="formButton" type="button" >Envoyer</button>
                     </form>
                 </div>
 
             </div>
         </div>
-
     </section>
-    <section class="confort"></section>
+    <section>
+        <div class="SectionTitle">
+            <hr class="line">
+            <h3 class="title">A Propos de Moi</h3>
+            <hr class="line">
+        </div>
+        <div class="About">
+            <img class="AboutPic" src="./images/picturetest.jpg" alt="">
+            <div class="AboutBoth">
+                <p class="AboutTextTitle">Alfred Delaunoix</p>
+                <q class="AboutText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est accusamus natus velit consequatur laudantium odit iusto deserunt amet nam porro animi excepturi ipsa, voluptate corporis hic autem praesentium officiis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est accusamus natus velit consequatur laudantium odit iusto deserunt amet nam porro animi excepturi ipsa, voluptate corporis hic autem praesentium officiis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est accusamus natus velit consequatur laudantium odit iusto deserunt amet nam porro animi excepturi ipsa, voluptate corporis hic autem praesentium officiis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est accusamus natus velit consequatur laudantium odit iusto deserunt amet nam porro animi excepturi ipsa, voluptate corporis hic autem praesentium officiis</q>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="SectionTitle">
+            <hr class="line">
+            <h3 class="title">En Savoir Plus</h3>
+            <hr class="line">
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h2>Elagage</h2>
+                <button class="buttonMore">En Savoir Plus</button>
+            </div>
+            <div class="card">
+                <h2>Abattage</h2>
+                <button class="buttonMore">En Savoir Plus</button>
+            </div>
+            <div class="card">
+                <h2>Entretien de Jardin</h2>
+                <button class="buttonMore">En Savoir Plus</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img class="logoFooter" src="./images/Logo+nomblanc.png" alt="Alfred Delaunois">
+        <div class="infoFooter">
+            <div class="legal">
+                <a class="footerText" href="">Mentions Légales</a>
+                <a class="footerText" href="">Copyright</a>
+            </div>
+            <div class="social">
+                <a class="footerTitle" href="">Facebook</a>
+                <a class="footerTitle" href="">Instagram</a>
+                <a class="footerTitle" href="">info@gmail.com</a>
+                <a class="footerTitle" href="">049X/XX.XX.XX</a>
+            </div>
+            <div class="navi">
+                <a class="footerText" href="">Nos Services</a>
+                <a class="footerText" href="">Avis</a>
+                <a class="footerText" href="">A Propose de Moi</a>
+                <a  class="footerText" href="">En Savoir Plus</a>
+                <a class="footerText" href="">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- <section class="confort"></section> -->
 
 <script src="./script/main.js"></script>
 </body>
