@@ -63,10 +63,7 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 
 
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
+/* a:active { text-decoration: none; } */
 
 
 .HomePage {
@@ -128,6 +125,146 @@ h2 {
 }
 
 .imageCarrousel {
-    width: 360px;
+    width: 330px;
     height: 285px;
+}
+
+.SectionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    border: none;
+    border-top: 2px solid #85DE76;
+    width: 300px;
+    
+}
+section {
+    margin-top: 40px;
+}
+.title {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+.serviceTxt {
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #636951;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.quote1 {
+    width: 18px;
+    height: 17px;
+}
+.quote2 {
+    width: 18px;
+    height: 17px;
+}
+.textlike {
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+a.textlikeA {
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: white;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+
+}
+a.textlikeA:hover {
+    text-decoration: underline;
+}
+.text {
+    display: inline;
+}
+.BEAFcarrousel {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.advicePp {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+
+}
+.Advicecarrousel {
+    display: flex;   
+    margin-top: 50px;
+    justify-content: center;
+}
+.adviceProfile {
+    display: flex;
+    width: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.profileName {
+    font-size: 13px;
+    color: black;
+    margin-bottom: 5px;
+
+}
+.profleText {
+    font-size: 13px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: #9C9C9C;
+    font-style: italic;
+   
+}
+.nameText {
+    margin-left:15px;
+    margin-right: 20px;
+}
+.backPic{
+    margin-top: 40px;
+    height: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/images/picturetest.jpg')
+
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    display: flex;
+}
+.phoneMail{
+    display: flex;
+    align-items: center;
+}
+.contactInfo{
+    color:white;
+}
+.demandeDevis{
+    color: black;
+
+}
+.titreDevis{
+
+}
+.inputR{
+
+}
+.inputM {
+
+}
+.confort{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
 }
