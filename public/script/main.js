@@ -1,3 +1,5 @@
+
+
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
   const front = card.querySelector('.card-front');
@@ -12,4 +14,21 @@ cards.forEach(card => {
     }
   });
 });
+
+
+const backToTopButton = document.querySelector('.backToTop')
+window.addEventListener('scroll', ()=>{
+  if (window.pageYOffset >=500){
+    backToTopButton.classList.add('show-back-to-top-btn')
+  }
+  else {
+    backToTopButton.classList.remove('show-back-to-top-btn')
+  }
+})
+backToTopButton.addEventListener('click', () =>{
+  window.scrollTo({
+    top:0
+  })
+})
+
 

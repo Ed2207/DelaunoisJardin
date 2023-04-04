@@ -35,9 +35,9 @@ app.post('/', (req, res)=>{
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-          console.log("Erro" + error);
-        //   res.status(500).send('Internal Server Error');
+          res.status(500).send('Internal Server Error');
         } else {
+          
          res.send('Demande envoyé');
         }
       });
