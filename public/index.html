@@ -13,21 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,800;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    
-    
 </head>
 <body>
     <nav>
         <div class="logoAndName">
-            <img class="logoImageNavBar" src="./images/logo.png" alt="">
+            <a href=""><img class="logoImageNavBar" src="./images/logo.png" alt=""></a>
             <h3 class="nameNavBar">Delaunois Alfred</h3>
         </div>
         <div class="navBarLinks">
-            <a class="navBarLink" href="">Nos Services</a>
-            <a class="navBarLink" href="">Avis</a>
-            <a class="navBarLink" href="">A Propos de Moi</a>
-            <a class="navBarLink" href="">En Savoir plus</a>
-            <button class="navButton">Contactez moi</button>
+            <a class="navBarLink" href="#sectionService">Nos Services</a>
+            <a class="navBarLink" href="#sectionAvis">Avis</a>
+            <a class="navBarLink" href="#sectionAbout">A Propos de Moi</a>
+            <a class="navBarLink" href="#sectionMore">En Savoir plus</a>
+            <button onclick="location.href='#sectionContact'" class="navButton">Contactez moi</button>
         </div>
     </nav>
     <section class="HomePage">
@@ -36,11 +34,11 @@
             <h2>Dans tout le brabant wallon et sa periférie</h2>
         </div>
         <div class="Buttons">
-            <button class="ButtonsHPContact">Contactez Moi</button>
-            <button class="ButtonHPAbout">A propos de Moi</button>
+            <button onclick="location.href='#sectionContact'" class="ButtonsHPContact">Contactez Moi</button>
+            <button onclick="location.href='#sectionAbout'" class="ButtonHPAbout">A propos de Moi</button>
         </div>
     </section>
-    <section>
+    <section id="sectionService">
         <div class="SectionTitle">
             <hr class="line">
             <h3 class="title">Nos Services</h3>
@@ -50,10 +48,9 @@
             <q class="text">
                 Je suis un professionnel de <h2 class="textlike">l'élagage, de l'abattage et de l'entretien de jardin basé dans le Brabant wallon</h2>. Avec plusieurs années d'expérience dans le domaine, je suis spécialisé dans la taille, la suppression et la gestion des arbres et arbustes pour les jardins. Je m'assure que les arbres sont en bonne santé et qu'ils sont coupés de manière à ne pas nuire à leur croissance future. Je suis également compétent pour effectuer tous types de travaux <h2 class="textlike">d'élagage et d'abattage en toute sécurité et dans le respect de l'environnement.</h2>
             </br>
-            Je suis également à votre disposition pour <h2 class="textlike">entretenir votre jardin</h2>, que ce soit en taillant vos haies et vos arbustes, en prenant soin de vos plates-bandes et de vos massifs floraux. Quel que soit votre projet, je suis à l'écoute de vos besoins et de vos attentes afin de fournir un travail de qualité. Je me déplace dans tout <h2 class="textlike">le Brabant wallon et sa périférie</h2> et je suis disponible pour répondre à <a class="textlikeA">demande de devis.</a> N'hésitez pas à me contacter pour toutes questions ou pour prendre rendez-vous.
+            Je suis également à votre disposition pour <h2 class="textlike">entretenir votre jardin</h2>, que ce soit en taillant vos haies et vos arbustes, en prenant soin de vos plates-bandes et de vos massifs floraux. Quel que soit votre projet, je suis à l'écoute de vos besoins et de vos attentes afin de fournir un travail de qualité. Je me déplace dans tout <h2 class="textlike">le Brabant wallon et sa périférie</h2> et je suis disponible pour répondre à <a href="#sectionContact" class="textlikeA">demande de devis.</a> N'hésitez pas à me contacter pour toutes questions ou pour prendre rendez-vous.
         </q>
         </div>
-       
         <div class="BEAFcarrousel">
             <img class ='imageCarrousel' src="/images/picturetest.jpg" alt="">
             <img class ='imageCarrousel' src="/images/picturetest.jpg" alt="">
@@ -61,7 +58,7 @@
             <img class ='imageCarrousel' src="/images/picturetest.jpg" alt="">
         </div>
     </section>
-    <section>
+    <section id="sectionAvis">
         <div class="SectionTitle">
             <hr class="line">
             <h3 class="title">Avis</h3>
@@ -92,7 +89,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="sectionContact">
         <div class="SectionTitle">
             <hr class="line">
             <h3 class="title">Contactez Moi</h3>
@@ -103,11 +100,11 @@
                 <div class="contact">
                     <div class="phoneMail">
                         <button class="contactButton"><img class="contactIcon" src="./images/telephone.png" alt="call number"></button>
-                        <a class="contactInfo">049X/XX.XX.XX</a>
+                        <a href="tel:+32472031580" class="contactInfo">0472/03.15.80</a>
                     </div>
                     <div class="phoneMail">
                         <button class="contactButton"><img class="contactIcon" src="./images/mail.png" alt="send email"></button>
-                        <a class="contactInfo">info@gmail.com</a>
+                        <a class="contactInfo" href="mailto:Delaunois.alfred@gmail.com?subject=Plus d'info" >Delaunois.alfred@gmail.com</a>
                     </div>
                 </div>
                 <div class="demandeDevis">
@@ -124,6 +121,7 @@
                                 <textarea class="inputMessage" type="text" name="message" placeholder="Votre Message"></textarea>
                             </div>
                         </div>
+                        <p id="messages-succes" >Demande envoyé !</p>
                         <button class="formButton" type="submit" >Envoyer</button>
                     </form>
                 </div>
@@ -131,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="sectionAbout">
         <div class="SectionTitle">
             <hr class="line">
             <h3 class="title">A Propos de Moi</h3>
@@ -145,7 +143,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="sectionMore">
         <div class="SectionTitle">
             <hr class="line">
             <h3 class="title">En Savoir Plus</h3>
@@ -191,7 +189,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="sectionFooter">
         <div class="imageDiv">
             <img class="logoFooter" src="./images/Logo+nomblanc.png" alt="Alfred Delaunois">
         </div>
@@ -201,25 +199,20 @@
                 <a class="footerText" href="">Copyright</a>
             </div>
             <div class="social">
-                <a class="footerTitle" href="">Facebook</a>
-                <a class="footerTitle" href="">Instagram</a>
-                <a class="footerTitle" href="">info@gmail.com</a>
-                <a class="footerTitle" href="">049X/XX.XX.XX</a>
+                <a class="footerTitle" href="https://www.facebook.com/profile.php?id=100090712801721" target="_blank">Facebook</a>
+                <a class="footerTitle" href="mailto:Delaunois.alfred@gmail.com?subject=Plus d'info">Delaunois.alfred@gmail.com</a>
+                <a class="footerTitle" href="tel:+32472031580">0472/03.15.80</a>
             </div>
             <div class="navi">
-                <a class="footerText" href="">Nos Services</a>
-                <a class="footerText" href="">Avis</a>
-                <a class="footerText" href="">A Propose de Moi</a>
-                <a  class="footerText" href="">En Savoir Plus</a>
-                <a class="footerText" href="">Contact</a>
+                <a class="footerText" href="#sectionService">Nos Services</a>
+                <a class="footerText" href="#sectionAvis">Avis</a>
+                <a class="footerText" href="#sectionAbout">A Propose de Moi</a>
+                <a  class="footerText" href="#sectionMore">En Savoir Plus</a>
+                <a class="footerText" href="#sectionContact">Contact</a>
             </div>
         </div>
     </footer>
-
-
-
-    <!-- <section class="confort"></section> -->
-
+    <button class="backToTop"></button>
 <script src="./script/main.js"></script>
 </body>
 </html>
